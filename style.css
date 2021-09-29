@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Interstate-light;
+    src: url('fonts/interstate/Interstate-light.eot');
+    src: url('fonts/interstate/Interstate-light.woff') format('woff'),
+        url('fonts/interstate/Interstate-light.ttf') format('truetype'),
+        url('fonts/interstate/Interstate-light.svg#Interstate-light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Interstate-regular;
+    src: url("fonts/interstate/Interstate-regular.eot");
+    src: url("fonts/interstate/Interstate-regular.eot?#iefix") format("embedded-opentype"), url("../interstate/Interstate-regular.woff") format("woff"), url("../interstate/Interstate-regular.ttf") format("truetype"), url("../interstate/Interstate-regular.svg#fontname") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Interstate-bold;
+    src: url("fonts/interstate/Interstate-bold.eot");
+    src: url("fonts/interstate/Interstate-bold.eot?#iefix") format("embedded-opentype"), url("../interstate/Interstate-bold.woff") format("woff"), url("../interstate/Interstate-bold.ttf") format("truetype"), url("../interstate/Interstate-bold.svg#fontname") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+*{
+    margin: 0;
+    font-family: Interstate-regular, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+.crd {
+	opacity:0;
+}
+
+.Banner_text {
+	height: 100vh;
+	background: url(../images/Section-1-BG.jpg) no-repeat;
+	background-size: cover;
+    background-position: top center;
+}
+.Banner_text h2 {
+    color: #fff;
+    padding-top: 100px;
+    margin: 0;
+}
+.Banner_text p {
+    color: #fff;
+    font-size: 10px;
+}
+.Banner_text img {
+	width: 15%;
+    margin: 20px 0px 30px 0px;
+}
+
+.scrlDwn {
+	position:absolute;
+}
+img.mgset {
+    width: 30%;
+	margin:0;
+	cursor:pointer;
+}
+.socialMedia {
+	opacity: 0;
+}
+.test:hover > .socialMedia {
+    opacity: 1;
+}
+
+.thumbContainer {
+	padding:20px 0px 10px 0px;
+}
+.scrlDwn {
+    position: absolute;
+    width: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -45vh;
+}
+.thmb ul {
+    margin: 0;
+    padding: 10px 0px 0px 0px;
+}
+.thmb ul li {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 12px;
+    font-size: 10px;
+}
+.innerLi {
+	padding:0 !important;
+}
+.innerLi li {
+    padding: 0 !important;
+}
+ul.rates {
+    text-align: left;
+    padding-left: 12px;
+}
+ul.rates li {
+    display: inline-block;
+    padding: 0;
+}
+.thmb.text-center {
+    border: 1px solid #eee;
+}
+@media only screen and (min-width:320px) and (max-width: 767px){
+	.Banner_text img {
+		width: 65%;
+	}
+	.scrlDwn, img.mgset {
+		width:20% !important;
+	}
+	img.thmbmg {
+		width: 100%;
+	}
+	ul.rates {
+		padding-bottom: 30px;
+	}
+}
+@media only screen and (min-width:320px) and (max-width: 767px) and (orientation: landscape) {
+	.Banner_text {
+		height:180vh;
+	}
+}
+@media only screen and (min-width:768px) and (max-width: 1024px)  and (orientation: portrait) {
+	.Banner_text {
+		height:50vh;
+	}
+	.scrlDwn {
+		bottom: -15vh;
+	}
+	img.thmbmg {
+		width: 100%;
+	}
+	.thmb ul li, ul.rates {
+		padding-left: 0;
+	}
+}
