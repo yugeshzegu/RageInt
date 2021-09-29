@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CitiBank</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+
+<body>
+<section class="Banner_text">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 col-lg-12 col-sm-12">
+			<div class="text-center">
+				<h2>Citibank Ready Credit</h2>
+				<p>A world of unforgettable experiences awaits.</p>
+				<img src="images/CreditCard.png" alt="creditCard" title="CreditCard" class="crd"/>
+				<p>SMS to 72848 ACT &lt; Space &gt; &lt; Last 4 digits of Credit Card number &gt; </p>				
+			</div>
+			<div class="scrlDwn text-center">
+				<p class="">Scroll to Explore</p>
+				<img class="mgset" src="images/scroll-down.png" alt="scrolldown" title="scroll-down"/>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section class="thumbContainer">
+<div class="container">
+		<div class="row">
+				<div class="col-md-3 col-lg-3 col-sm-3 thmb">
+					<div class="text-center test">
+						<img class="socialMedia" src="images/icon_share.gif" alt="iconshare" title="iconshare"/>
+						<img src="images/thumb_recipe1.jpg" alt="thumb1" title="thumb1" class="thmbmg"/>
+						<ul class="names">
+							<li>French Toast with Honey</li>
+							<li>
+								<ul class="innerLi">
+									<li>Dessert</li>
+									<li></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="rates">
+							<li>153 likes</li>
+							<li> | </li>
+							<li>200 pins</li>
+							<li> | </li>
+							<li>24 tweets</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-3 col-sm-3 thmb">
+					<div class="text-center  test">
+						<img class="socialMedia" src="images/icon_share.gif" alt="iconshare" title="iconshare"/>
+						<img src="images/thumb_recipe2.jpg" alt="thumb2" title="thumb2" class="thmbmg"/>
+						<ul class="names">
+							<li>French Toast with Honey</li>
+							<li>
+								<ul class="innerLi">
+									<li>Dessert</li>
+									<li></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="rates">
+							<li>153 likes</li>
+							<li> | </li>
+							<li>200 pins</li>
+							<li> | </li>
+							<li>24 tweets</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-3 col-sm-3 thmb">
+					<div class="text-center test">
+						<img class="socialMedia" src="images/icon_share.gif" alt="iconshare" title="iconshare"/>
+						<img src="images/thumb_recipe3.jpg" alt="thumb3" title="thumb3" class="thmbmg"/>
+						<ul class="names">
+							<li>French Toast with Honey</li>
+							<li>
+								<ul class="innerLi">
+									<li>Dessert</li>
+									<li></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="rates">
+							<li>153 likes</li>
+							<li> | </li>
+							<li>200 pins</li>
+							<li> | </li>
+							<li>24 tweets</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-3 col-sm-3 thmb">
+					<div class="text-center test">
+						<img class="socialMedia" src="images/icon_share.gif" alt="iconshare" title="iconshare"/>
+						<img src="images/thumb_recipe4.jpg" alt="thumb4" title="thumb4" class="thmbmg"/>
+						<ul class="names">
+							<li>French Toast with Honey</li>
+							<li>
+								<ul class="innerLi">
+									<li>Dessert</li>
+									<li></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="rates">
+							<li>153 likes</li>
+							<li> | </li>
+							<li>200 pins</li>
+							<li> | </li>
+							<li>24 tweets</li>
+						</ul>
+					</div>
+				</div>
+			
+	</div>
+</div>
+</section>
+</body>
+<script>
+$(document).ready(function(){
+	$('html, body').animate({scrollTop: $('body').offset().top-200}, 500);	
+	$(".crd").animate({"opacity": "1"},2000);
+	$('.mgset').click(
+		function (){
+			$('html, body').animate({scrollTop: $('.thmb').offset().top-200}, 500);
+		}
+	)	
+});
+</script>
+</html>
